@@ -14,7 +14,7 @@ void drawFoot(int x, int y)
 int main(int argc, char* argv[])
 {
     sdlw::setColor(169, 169, 169);
-    //HEAD
+    //HEAD 
     sdlw::drawLine(80, 160, 120, 70);
     sdlw::drawLine(120, 70, 140, 115);
     sdlw::drawLine(140, 115, 180, 115);
@@ -45,27 +45,18 @@ int main(int argc, char* argv[])
     sdlw::drawLine(130, 300, 80, 250);
     sdlw::drawLine(80, 250, 80, 160);
     //EYES
+    sdlw::setColor(255, 255, 255);
     sdlw::drawFillCircle(125, 160, 5);
     sdlw::drawFillCircle(195, 160, 5);
-    //
+    //NOSE AND MOUTH
+    sdlw::setColor(169, 169, 169);
     sdlw::drawLine(160, 160, 160, 170);
     sdlw::drawLine(145, 170, 175, 170);
-    //MUSTACHE
+    //WHISKERS
     sdlw::drawLine(90, 160, 55, 160);
     sdlw::drawLine(90, 170, 55, 170);
     sdlw::drawLine(220, 160, 255, 160);
     sdlw::drawLine(220, 170, 255, 170);
-    
-
-
-
-
-
-    
-
-
-
-   
     
     sdlw::updateGraphics();
     std::cin.get();
